@@ -4,7 +4,7 @@
   "description": "Retro Y2K themed slide-deck portfolio website.",
   "main": "index.html",
   "scripts": {
-    "dev": "npx http-server ./ -p 3000"
+    "dev": "npx http-server ./ -p 3000 -c-1"
   },
   "keywords": [
     "portfolio",

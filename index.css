@@ -16,21 +16,21 @@
   --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Color Palette (studied-DNA / Cool Lavender & Pink/Magenta Accent) */
-  --color-bg-grid: oklch(24% 0.024 255);      /* Dark blueprint background */
-  --color-paper: oklch(94% 0.015 255);        /* Light cool lavender-blue */
-  --color-paper-2: oklch(89% 0.022 255);      /* Secondary lavender-blue (darker) */
-  --color-paper-cream: oklch(97% 0.005 80);   /* Creamy polaroid background */
+  /* Color Palette (User-defined Y2K Theme) */
+  --color-bg-grid: oklch(38% 0.13 260);        /* Deep Blue (#2C4887) */
+  --color-paper: oklch(92% 0.007 75);         /* Cream (#EBE6E3) */
+  --color-paper-2: oklch(88% 0.007 75);       /* Cream secondary (slightly darker) */
+  --color-paper-cream: oklch(96% 0.007 75);   /* Warm polaroid background */
   
-  --color-ink: oklch(18% 0.015 255);          /* Deep charcoal ink */
-  --color-neutral: oklch(60% 0.012 255);      /* Medium grey-blue */
-  --color-muted: oklch(45% 0.012 255);        /* Deeper grey-blue */
-  --color-rule: oklch(80% 0.015 255);         /* Light divider grey */
+  --color-ink: oklch(28% 0.03 20);            /* Dark brown/charcoal (#443030) */
+  --color-neutral: oklch(66% 0.04 260);       /* Muted Blue/Grey (#8F9AB3) */
+  --color-muted: oklch(50% 0.04 260);         /* Deeper muted blue/grey */
+  --color-rule: oklch(82% 0.01 75);           /* Light divider cream/grey */
   
-  --color-accent: oklch(70% 0.16 325);        /* Y2K Magenta/Pink */
-  --color-accent-hover: oklch(65% 0.18 325);  /* Slightly darker magenta */
-  --color-accent-light: oklch(92% 0.04 325);  /* Pastel light pink */
-  --color-focus: oklch(70% 0.19 325);         /* Vibrant pink focus ring */
+  --color-accent: oklch(67% 0.14 348);        /* Secondary Pink/Magenta (#E67E99) */
+  --color-accent-hover: oklch(62% 0.16 348);  /* Darker pink */
+  --color-accent-light: oklch(94% 0.03 348);  /* Light pink background tint */
+  --color-focus: oklch(67% 0.18 348);         /* Pink focus ring */
 
   /* Spacing Scale (4-point base) */
   --space-xs: 0.25rem;   /* 4px */
@@ -566,15 +566,21 @@ a:focus-visible, button:focus-visible {
   border-radius: 6px;
   overflow: hidden;
   background-color: var(--color-rule);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
 }
 
-.placeholder-avatar, .polaroid-img {
+.placeholder-avatar {
   width: 100%;
   display: block;
 }
+
 .polaroid-img {
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .badge-footer {
