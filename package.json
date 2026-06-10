@@ -1,0 +1,17 @@
+{
+  "name": "y2k-retro-portfolio",
+  "version": "1.0.0",
+  "description": "Retro Y2K themed slide-deck portfolio website.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server ./ -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "y2k",
+    "retro",
+    "graphic-design"
+  ],
+  "author": "Karin Besamueva",
+  "license": "ISC"
+}
